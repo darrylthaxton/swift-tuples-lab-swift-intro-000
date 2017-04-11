@@ -15,7 +15,7 @@
  ### 1. Create a tuple to represent a person! The tuple should have a person's name in the first field and their age in the second field. Define the tuple as a variable named `person`.
  */
 // write your code here
-
+var person = (name: "Sam", age: 29)
 
 
 
@@ -27,6 +27,7 @@
  ### 2. Print out "<Name> is <Age> years old" using the tuple you created in Question 1.
  */
 // write your code here
+print("\(person.0) is \(person.1) years old")
 
 
 
@@ -39,8 +40,9 @@
  ### 3. It is the person's birthday! Increment the person's age by one year that you created in Question 1.
  */
 // write your code here
-
-
+person.1.advanced(by: 1)
+//or
+person.1 = 30
 
 
 
@@ -51,8 +53,7 @@
  ### 4. Print out "Happy <Age> birthday, <Name>!" using the `person` variable.
  */
 // write your code here
-
-
+print("Happy \(person.1) birthday \(person.0)")
 
 
 
@@ -64,7 +65,7 @@
  */
 // write your code here
 
-
+var someone = (name: "Monday", age: 25)
 
 
 
@@ -75,7 +76,7 @@
  ### 6. Print out "<Name> is <Age> years old" for the `someone` variable you created in Question 5.
  */
 // write your code here
-
+print("\(someone.0) is \(someone.1) year old")
 
 
 
@@ -86,6 +87,10 @@
  ### 7. It is `someone`'s birthday! Increment `someone`'s age by one year.
  */
 // write your code here
+someone.1.advanced(by: 1)
+// or
+someone.1 = 26
+
 
 
 
@@ -97,7 +102,7 @@
  ### 8. Print out "Happy <Age> birthday, <Name>!" using the `someone` variable.
  */
 // write your code here
-
+print("Happy \(someone.1) birthday, \(someone.0)")
 
 
 
@@ -109,7 +114,7 @@
  ### 9. Create a _constant_ tuple called `human`, with named fields for `name` and `age`.
  */
 // write your code here
-
+let human = (name: "Louis", age: 12)
 
 
 
@@ -120,7 +125,7 @@
 /*:
  ### 10. Can you change `human`'s age? Why or why not?
  */
-
+// No you will not be able to change a constant value becasue it is a constant 
 
 
 
